@@ -30,6 +30,9 @@
                                         <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Oku"/>
+                                        <connections>
+                                            <action selector="oku:" destination="BYZ-38-t0r" eventType="touchUpInside" id="68e-vH-UHy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -53,6 +56,9 @@
                                         <color key="tintColor" systemColor="tertiarySystemBackgroundColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Yaz"/>
+                                        <connections>
+                                            <action selector="yaz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aV0-kg-5H2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -76,6 +82,9 @@
                                         <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Sil"/>
+                                        <connections>
+                                            <action selector="silText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ud7-nX-4ET"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
@@ -99,6 +108,9 @@
                                         <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Kaydet"/>
+                                        <connections>
+                                            <action selector="kaydet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9OR-AA-fxi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
@@ -122,6 +134,9 @@
                                         <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Göster"/>
+                                        <connections>
+                                            <action selector="goster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dLW-9M-DPo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
@@ -145,6 +160,9 @@
                                         <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Sil"/>
+                                        <connections>
+                                            <action selector="silImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IcA-hc-wAf"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
@@ -161,6 +179,10 @@
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UhZ-gY-c7R">
                                 <rect key="frame" x="30" y="268" width="354" height="564"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="564" id="HBi-Ua-M1V"/>
+                                    <constraint firstAttribute="width" constant="354" id="W0e-Bl-hJw"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -193,6 +215,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="B05-AJ-Qy2" secondAttribute="trailing" constant="30" id="yzE-M8-ocX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageViewGoster" destination="UhZ-gY-c7R" id="xzR-4O-LXH"/>
+                        <outlet property="textFieldGirdi" destination="B05-AJ-Qy2" id="ItU-HQ-ABn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
